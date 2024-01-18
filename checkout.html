@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/all.min.css" />
+    <link rel="stylesheet" href="styles/checkout.css" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header-image-container">
+        <a href="index.html">
+          <img src="images/amazon-logo.png" alt="logo" />
+        </a>
+      </div>
+
+      <div class="back-to-items">
+        Checkout (
+        <a href="index.html" class="js-items-count">0</a>
+        )
+      </div>
+
+      <i class="fa-solid fa-lock"></i>
+    </header>
+
+    <main class="main container">
+      <a href="index.html" class="back-home page-title">
+        Add new product
+        <i class="fa-solid fa-plus"></i>
+      </a>
+      <div class="page-title">Review your order</div>
+
+      <div class="checkout-grid">
+        <div class="orders js-orders"></div>
+
+        <!-- Popup Confirmation Container -->
+        <div id="confirmationPopup" class="popup-container">
+          <!-- Popup Box -->
+          <div class="popup-box">
+            <p>Are you sure you want to delete this product from your cart?</p>
+            <button id="yesButton" class="popup-button popup-button-yes">
+              Yes
+            </button>
+            <button id="noButton" class="popup-button popup-button-no">
+              No
+            </button>
+          </div>
+        </div>
+
+        <div class="payments">
+          <div class="payemnt-title">Order Summary</div>
+
+          <div class="payment-row">
+            <div class="js-products-count">Items (3):</div>
+            <div class="payment-money js-products-cost">$42.33</div>
+          </div>
+
+          <div class="payment-row">
+            <div>Shipping & handling:</div>
+            <div class="payment-money js-shipping-cost">$0</div>
+          </div>
+
+          <div class="payment-row">
+            <div>Total before tax:</div>
+            <div class="payment-money js-cost-after-shipp">$47.74</div>
+          </div>
+
+          <div class="payment-row">
+            <div>Estimated tax (10%):</div>
+            <div class="payment-money js-tax">$4.77</div>
+          </div>
+
+          <div class="payment-row total-row">
+            <div>Order total:</div>
+            <div class="payment-money js-total-cost">$52.51</div>
+          </div>
+
+          <button class="place-order-button">Place Order</button>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="scripts/checkout.js"></script>
+  </body>
+</html>

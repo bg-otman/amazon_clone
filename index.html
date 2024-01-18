@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="B.Othmane" />
+    <meta
+      name="description"
+      content="This is an E-commerce Store, it display list of products. You can buy any product by adding it to your cart, you can see the total cost of your product & you can keep track : preparing , shipped Or dillivered..."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/all.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Amazon | Project</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img
+          src="images/amazon-logo-white.png"
+          alt="Logo"
+          width="320"
+          height="97"
+        />
+      </a>
+      <div class="search_div" role="search">
+        <input
+          type="search"
+          name="searchBar"
+          id="searchBar"
+          placeholder="Search here"
+        />
+        <button class="search__button">
+          <i class="fa-solid fa-search"></i>
+        </button>
+      </div>
+      <a href="orders.html">Returns <span>& Orders</span></a>
+      <a href="checkout.html">
+        <img
+          src="images/cart-icon.png"
+          alt="cart-icon"
+          width="78"
+          height="54"
+        />
+        <div class="cart-quantity js-cart-quantity">0</div>
+        <p>Cart</p>
+      </a>
+    </header>
+
+    <main class="main">
+      <div class="products-grid js-products-container"></div>
+    </main>
+
+    <script type="module" src="scripts/script.js"></script>
+  </body>
+</html>
